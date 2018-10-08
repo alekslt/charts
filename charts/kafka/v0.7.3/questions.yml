@@ -67,6 +67,12 @@ questions:
   required: true
   label: Kafka Brokers
   group: "Kafka Settings"
+- variable: external.enabled
+  default: true
+  description: "Enable external access to Kafka Brokers"
+  type: boolean
+  label: External Access
+  group: "Kafka Settings"
 - variable: persistence.enabled
   default: false
   description: "Enable persistent volume for Kafka"
