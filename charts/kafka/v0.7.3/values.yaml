@@ -139,7 +139,7 @@ configurationOverrides:
   ##
   ## Setting "advertised.listeners" here appends to "PLAINTEXT://${POD_IP}:9092,"
   "advertised.listeners": |-
-    EXTERNAL://kafka.cluster.local:$((31090 + ${KAFKA_BROKER_ID}))
+    EXTERNAL://digifelab-k8s.ife.toppe.net:$((31090 + ${KAFKA_BROKER_ID}))
   "listener.security.protocol.map": |-
     PLAINTEXT:PLAINTEXT,EXTERNAL:PLAINTEXT
 
